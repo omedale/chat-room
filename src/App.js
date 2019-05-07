@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-import SideBar from "./containers/SideBar"
-import MessagesList from "./containers/MessagesList"
-import AddMessage from "./containers/AddMessage"
+import { SideBar } from "./components/containers/SideBar"
+import { MessagesList } from "./components/containers/MessagesList"
+import { AddMessage } from "./components/containers/AddMessage"
 
 class App extends Component {
   render() {
@@ -10,8 +10,8 @@ class App extends Component {
       <div id="container">
         <SideBar />
         <section id="main">
-          <MessagesList/>
-          <AddMessage />
+          <MessagesList />  
+          <AddMessage />   
         </section>
       </div>
     );
